@@ -12,6 +12,7 @@ flask-bcrypt = "*"
 flask-wtf = "*"
 wtforms = "*"
 email-validator = "*"
+gunicorn = "*"
 
 [dev-packages]
 
