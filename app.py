@@ -11,7 +11,7 @@ from flask_bcrypt import Bcrypt
 app = Flask(__name__)
 
 #Define uri for db
-app.config['SQLALCHEMY_DATABASE_URI']='postgresql://bnpettdlgzxipc:f24c2f3bf1532689f572752c2d457662bf36946370c2790fb604b076ee9cc832@ec2-18-235-45-217.compute-'
+app.config['SQLALCHEMY_DATABASE_URI']='postgres://bnpettdlgzxipc:f24c2f3bf1532689f572752c2d457662bf36946370c2790fb604b076ee9cc832@ec2-18-235-45-217.compute-'
 app.config['SECRET_KEY'] = 'thisisasecretkey'
 
 
