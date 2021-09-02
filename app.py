@@ -6,7 +6,7 @@ from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField
 from wtforms.validators import InputRequired, Length, ValidationError
 from flask_bcrypt import Bcrypt
-import os
+
 
 #Build an instance
 app = Flask(__name__)
@@ -14,7 +14,8 @@ app = Flask(__name__)
 #Define uri for db
 
 # app.config['SQLALCHEMY_DATABASE_URI']='postgresql://bnpettdlgzxipc:f24c2f3bf1532689f572752c2d457662bf36946370c2790fb604b076ee9cc832@ec2-18-235-45-217.compute-'
-app.config['SQLALCHEMY_DATABASE_URI']=os.environ.get('DATABASE_URI')
+# app.config['SQLALCHEMY_DATABASE_URI']=os.environ.get('DATABASE_URI')
+app.config['SQLALCHEMY_DATABASE_URI']="postgres://bnpettdlgzxipc:f24c2f3bf1532689f572752c2d457662bf36946370c2790fb604b076ee9cc832@ec2-18-235-45-217.compute-1.amazonaws.com:5432/dda8kjrug1lh38"
 app.config['SECRET_KEY'] = 'thisisasecretkey'
 
 
